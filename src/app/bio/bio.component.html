@@ -1,1 +1,30 @@
-<p>bio works!</p>
+<div>
+    <mat-grid-list cols="2" rowHeight="250px">
+        <mat-grid-tile>
+            <img [src]="dato.image">
+        </mat-grid-tile>
+        <mat-grid-tile>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td> Capitulos </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let capitulos of dato.episode">
+                        <td>{{capitulos}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <p>{{dato.name}}</p><br>
+            <p>{{dato.status}}</p><br>
+            <p>{{dato.gender}}</p><br>
+            <p>{{dato.created}}</p>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+<button mat-raised-button color="primary" [routerLink]="['/inicio']">Volver</button>

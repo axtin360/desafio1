@@ -1,11 +1,11 @@
 <mat-grid-list cols="3" rowHeight="2:2">
     <mat-grid-tile *ngFor="let personajes of datos; let i = index">
         <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>{{personajes.name}}</mat-card-title>
+            </mat-card-header>
             <img mat-card-image [src]="personajes.image" [alt]="personajes.name">
             <mat-card-content>
-                <h3>
-                    Nombre: {{personajes.name}}
-                </h3>
                 <p>
                     Status: {{personajes.status}}
                 </p>
@@ -17,7 +17,7 @@
                 </p>
             </mat-card-content>
             <mat-card-actions>
-                <button mat-raised-button color="primary">Más...</button>
+                <button (click)="verPersonaje(i)" mat-raised-button color="primary">Más...</button>
             </mat-card-actions>
         </mat-card>
     </mat-grid-tile>

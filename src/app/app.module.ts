@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DatosService } from './servicios/datos.service';
-import { MatCardModule, MatGridListModule } from '@angular/material';
+import { MatCardModule, MatGridListModule, MatTableModule } from '@angular/material';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { MatButtonModule } from '@angular/material/button';
 import { APP_ROUTING } from './app.routes';
@@ -24,6 +24,7 @@ import { BioComponent } from './bio/bio.component';
     MatCardModule,
     MatButtonModule,
     MatGridListModule,
+    MatTableModule,
     APP_ROUTING
   ],
   providers: [

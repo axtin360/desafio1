@@ -21,6 +21,6 @@ export class PersonajesComponent implements OnInit {
     this.datos = this._datosService.getDatos();
   }
 verPersonaje(idx:number){
-  this.router.navigate(['/datos',idx]);
+  this.router.navigate(['/bio',idx]);
 }
 }

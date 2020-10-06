@@ -7,8 +7,7 @@ import { BioComponent } from './bio/bio.component';
 
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: PersonajesComponent },
-    { path: 'datos/:id', component: BioComponent },
-
+    { path: 'bio/:id', component: BioComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

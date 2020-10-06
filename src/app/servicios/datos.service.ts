@@ -253,8 +253,8 @@ export class DatosService {
      return this.datos;
    }
    getDato(idx:string){
-     //return this.datos[idx];
-     console.log(idx);
+     return this.datos[idx];
+     //console.log(idx);
    }
   }
 
